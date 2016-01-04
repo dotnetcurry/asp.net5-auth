@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet"  href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li><a asp-controller="Person" asp-action="Index">Person</a></li>
+            <li><a asp-controller="Account" asp-action="Register">Register</a></li>
+            <li><a asp-controller="Account" asp-action="Login">Login</a></li>
+        </ul>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <script src="~/lib/jQuery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
